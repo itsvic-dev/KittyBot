@@ -46,3 +46,14 @@ Last updated: 2020-10-28
 
 ## 2020-10-28
 Initial upload.
+
+# Licensing
+I'm releasing **the code** into the public domain.
+
+Assets, however, are released under the CC-BY 4.0 license. As such, they require attribution, and are not allowed to be restricted legally.
+
+The images:
+ - `/static/img/kittyRound.png`
+ - `/static/img/kittySquare.png`
+
+are photos of my cat, and as such, they're released under the CC-BY-NC-ND 4.0 license, which prohibits you from editing the images, and doesn't allow you to use them for commercial purposes. You must also give me appropriate credit for them.
