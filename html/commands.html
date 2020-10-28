@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+    <head>
+        <title>Kitty - Commands</title>
+        <link href="/static/css/commands.css?v=107" rel="stylesheet" type="text/css">
+        <link rel="icon" type="image/png" href="/static/img/kittyRound.png"/>
+        <meta property="og:title" content="Commands - Kitty">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://kitty.okame.gq/commands">
+        <meta property="og:description" content="A list of commands currently served by Kitty.">
+        <meta property="og:image" content="{{avatar}}">
+        <meta property="theme-color" content="#E87BB9">
+        <script>
+            function toggleCategory(elem) {
+                var cmds = elem.parentElement.children[1];
+                if (elem.classList.contains("highlight"))
+                    cmds.style.height = "";
+                else
+                    cmds.style.height = cmds.scrollHeight + "px";
+                elem.classList.toggle("highlight");
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="content">
+                <h1>Commands</h1>
+                <p class="buttons">
+                    <a href="/">Back</a>
+                </p>
+                <!-- start commands here -->
+                {% for category in categories %}
+                    <div class="category">
+                        <h2 class="header" onclick="toggleCategory(this);">{{categoryData[category]['description']}}</h2>
+                        <div class="commands">
+                            {% for command in categoryData[category]['commands'] %}
+                                <div>
+                                    <p class="command">k.{{command['name']}}</p>
+                                    <p><i>Description:</i> {{command['description']}}</p>
+                                    {% if command['aliases']|length > 0 %}
+                                    <p><i>Aliases:</i> <span class="aliases">{{", ".join(command['aliases'])}}</span></p>
+                                    {% endif %}
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </body>
+</html>

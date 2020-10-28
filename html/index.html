@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+    <head>
+        <title>Kitty - An easily usable Discord bot.</title>
+        <link href="/static/css/main.css" rel="stylesheet" type="text/css">
+        <link rel="icon" type="image/png" href="/static/img/kittyRound.png"/>
+        <meta property="og:title" content="Kitty">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://kitty.okame.gq">
+        <meta property="og:description" content="Kitty is an easily usable Discord bot, made with ease of operation in mind.">
+        <meta property="og:image" content="{{avatar}}">
+        <meta property="theme-color" content="#E87BB9">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="header">
+                    <h1>
+                        <img src="{{avatar}}">
+    
+                        Kitty
+                    </h1>
+                    <h2>An easily usable Discord bot.</h2>
+                </div>
+                <div>
+                    <p class="buttons">
+                        <a href="{{invite}}" {% if linkNewPage %} target="_blank" {% endif %}>Add to a server</a>
+                        <a href="{{support}}" {% if linkNewPage %} target="_blank" {% endif %}>Join the support server</a>
+                        <a href="/commands" {% if linkNewPage %} target="_blank" {% endif %}>Commands</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,14 @@
+discord.py[voice]>=1.4.0+
+psutil
+opencv-python
+qrcode
+Pillow
+numpy
+requests
+selenium
+aiohttp
+jishaku
+aiohttp_jinja2
+Jinja2
+Wand
+filetype

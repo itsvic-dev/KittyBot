@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+ 
+/* nice scrollbar */
+:root {
+    scrollbar-color: #ffffff30 #ffffff10;
+    scrollbar-width: thin;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    display: block;
+    background-color: #ffffff10;
+}
+
+::-webkit-scrollbar-thumb {
+    display: block;
+    background-color: #ffffff30;
+}
+
+body {
+    color: white;
+    background-color: #222;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1, h2 {
+    font-weight: 400;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    max-width: 60rem;
+    width: auto;
+    width: -webkit-fill-available;
+    display: block;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.aliases {
+    font-weight: 300;
+    font-family: monospace;
+}
+
+.command {
+    font-weight: 400;
+    font-family: monospace;
+    font-size: 1.5rem;
+}
+
+.header {
+    background-color: #ffffff10;
+    padding: 1rem;
+    transition: background-color .2s ease-in-out;
+}
+
+.commands {
+    height: 0;
+    overflow: hidden;
+    transition: height .4s ease-in-out;
+}
+
+.header.highlight {
+    background-color: #ffffff30;
+    cursor: pointer;
+}
+
+.header:not(.highlight):hover {
+    background-color: #ffffff20;
+    cursor: pointer;
+}
+
+.buttons {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+p.buttons a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    transition: 0.2s ease-in-out background-color;
+    background-color: #ffffff10;
+}
+
+p.buttons a:hover {
+    background-color: #ffffff20;
+}
+
+p.buttons a:default {
+    background-color: #ffffff10;
+}
+
+p.buttons a:focus {
+    background-color: #ffffff30;
+}
