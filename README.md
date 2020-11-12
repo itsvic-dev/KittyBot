@@ -25,7 +25,7 @@ Install the dependencies:
 $ pip3 install -r requirements.txt
 ```
 
-Create `config.py` in the root directory with the following content:
+Create `data.py` in the root directory with the following content:
 ```py
 token = "YOUR_TOKEN_HERE"
 prefix = "k."
@@ -42,7 +42,10 @@ $ python3 ./main.py
 I still have to dig it out.
 
 # Updates
-Last updated: 2020-10-28
+Last updated: 2020-11-12
+
+## 2020-11-12
+Fix typo.
 
 ## 2020-10-28
 Initial upload.
